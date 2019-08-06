@@ -1,0 +1,28 @@
+<div class="container search">
+        <div class="form-group form-margin">
+            <div class="input-group">
+                <input type="text" class="form-control" name='filterLoompa' placeholder="Search" [(ngModel)]='filterLoompa'>
+                <span class="input-group-addon">
+                  <img src="assets/img/ic_search.png" height="20px"/>
+                </span>
+            </div>
+        </div>
+      </div>
+
+      <div class="title-content">
+              <h1 class="margin-height text-weight-medium">Find your Oompa Loompa</h1>
+              <h3 class="text-weight-medium color-grey">There ara more than 100k</h3>
+      </div>
+
+      <div class="container">
+            <div class="col-xs-18 col-sm-6 col-md-4" *ngFor='let loompa of loompas | filter:filterLoompa'>
+            <div class="thumbnail">
+                <a routerLink="detail/{{ loompa.id }}"><img [src]='loompa.image'></a>
+                <div class="caption">
+                    <h4 class="color-loompa">{{ loompa.first_name }}</h4>
+                    <p>{{ loompa.gender }}</p>
+                    <p>{{ loompa.profession }}</p>
+                </div>
+            </div>
+    </div>
+</div>

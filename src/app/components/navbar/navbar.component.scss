@@ -1,0 +1,15 @@
+.navbar-color{
+    background: #BBBBBB;
+    .navbar-header{
+        display:flex;
+        align-items: center;
+        height: 50px;
+        .navbar-logo{
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-text{
+            color: black !important;
+        }
+    }
+}

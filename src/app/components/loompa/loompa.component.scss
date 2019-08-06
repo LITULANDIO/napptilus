@@ -1,0 +1,34 @@
+$color-turkish:#24b6b3;
+$color-grey: #B3B6B7;
+$text-weight-medium: 400;
+
+.container{
+    margin-top: 5%;
+    .thumbnail{
+        border: none;
+        h4.color-loompa:hover{
+            color: $color-turkish;
+        }
+    }
+}
+.container.search{
+    display: flex;
+    justify-content: flex-end;
+    .form-group.form-margin{
+        width: 20%;
+    }
+}
+.title-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text-weight-medium{
+        font-weight: $text-weight-medium;
+    }
+    .margin-height{
+        line-height: 0;
+    }
+    .color-grey{
+        color: $color-grey;
+    } 
+}
