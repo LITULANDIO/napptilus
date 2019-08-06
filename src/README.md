@@ -42,10 +42,10 @@ Para ejecutar el servidor local
 ng serve --open
 
 ```
-
 Se tendría que abrir el navegador con la dirección siguiente: http://localhost:4200/
 
 **Consideraciones**: Los tipos de las variables y del constructor las he declarado publicas, es una mala práctica ya que en algunos casos es preferible definirla como privada, pero en ese caso docker no nos dejaría arrancar la imagen ya que no puede acceder a los tipos privados. Teniendo en cuenta que es desarrollo, no corremos ningún riesgo.
 
 El filtro para el buscador es por nombre, y hasta que no se escriban como mínimo 3 carácteres no realizará la búsqueda, creo que de ésta manera queda más clara la búsqueda.
+
 
