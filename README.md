@@ -30,14 +30,15 @@ docker build . -t test:latest
 ```
 docker run -d -p 80:80 test:latest
 ```
-Ya puedes entrar en tu localhost deberías de ver ésto:
-
-
 **2-** Si por el contrario deseas ejecutar la app con el server de angular, tendrás que tener instalado node, npm y angular cli. Si ese es tu caso tendrás que entrar dentro del proyecto, y en consola ejecutar el comando:
 
+Para instalar todas las dependencias
+```
+npm install
+```
+Para ejecutar el servidor local
 ```
 ng serve --open
-
 ```
 
 Se tendría que abrir el navegador con la dirección siguiente: http://localhost:4200/
